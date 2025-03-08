@@ -1,0 +1,296 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #FD5F00;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .kembali-btn button {
+  padding: 5px 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: #FD5F00;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar .kembali-btn button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.sidebar h3 {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  padding: 5px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li #profil {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.logout {
+  width: 75px;
+  margin-top: auto;
+  color: red;
+  background-color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.logout:hover {
+  background-color: #fdd;
+  border-radius: 10px;
+}
+
+/* Main Content */
+
+.main-panel {
+  display: flex;
+  margin: ;
+}
+
+.tampilan-flex {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  height: 340px;
+  align-items: center;
+  margin: 20px 20px;
+  margin-right: 50px;
+  border: 2px solid #FD5F00;
+  padding: 15px 0px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tampilan-flex .tampilan-baris {
+  display: flex;
+}
+
+.tampilan-baris .profile-foto {
+  margin-right: 200px;
+}
+
+.edit-like-view button{
+  margin-bottom: 35px;
+  justify-content: center;
+}
+
+.tampilan-flex .profile-foto p {
+  text-align: center;
+}
+
+.tampilan-flex .profile-nama {
+  margin-top: 10px;
+  text-align: start;
+  display: flex;
+}
+
+.profile-nama .nama-lengkap {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-foto {
+  margin-bottom: 10px;
+}
+
+.profile-foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.nama-role {
+  display: flex;
+  flex-direction: column;
+}
+
+.nama-role p.role-penulis {
+  font-size: 1rem;
+  background-color: blue;
+  border: 1px solid #f9f9f9;
+  color: #f9f9f9;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: 70px;
+  text-align: center;
+}
+
+.penulis-role, .email-nohp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.role-kontak {
+  display: flex;
+  flex-direction: column;
+}
+
+.penulis-role p, .email-nohp p {
+  font-size: 0.9rem;
+  background-color: #f9f9f9;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.edit-like-view {
+  margin-top: 10px;
+}
+
+.edit-like-view button {
+  background-color: white;
+  color: #FD5F00;
+  border: 1px solid #FD5F00;
+  border-radius: 9px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.edit-like-view button:hover {
+  background-color: #FD5F00;
+  color: white;
+}
+
+.like-view-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.like-view {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.like-view .jumlah {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.like-view .keterangan {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+/* Chart Section */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 10px auto 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #FD5F00;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.3, 0.1);
+  width: 500px;
+  height: 290px;
+  background-color: #fdfdfd;
+}
+
+/* Gaya untuk Elemen Canvas */
+.chart-container canvas {
+  max-width: 100%; /* Menjaga grafik tetap responsif */
+  height: auto; /* Mengatur tinggi otomatis */
+}
+
+/* Gaya Responsif untuk Chart Container */
+@media (max-width: 768px) {
+  .chart-container {
+      width: 90%; /* Menyesuaikan lebar pada layar kecil */
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+      width: 100%; /* Lebar penuh pada layar sangat kecil */
+      padding: 5px;
+  }
+}
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 120px;
+  }
+
+  .chart-container .bar {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    height: 100px;
+  }
+
+  .chart-container .bar {
+    width: 15px;
+  }
+}

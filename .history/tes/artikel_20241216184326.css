@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: underline; /* Gaya global yang memengaruhi semua <a> */
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding: 0 25px;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(51, 49, 49);
+    margin: 0 25px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header .kategori:hover {
+    color: #FD5F00;
+}
+
+header #beranda {
+    color: #FD5F00;
+    border-bottom: 2px solid #FD5F00;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+header .kategori:active {
+    color: black;
+}
+
+.kanan-nav {
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    width: 100px;
+    height: 30px;
+    background-color: #FD5F00;
+    color: #F6F6E9;
+    border: 1px solid #FD5F00;
+    padding: 0px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header #login-btn, #logout-btn, .loginAkun-btn button {
+    background-color: white;
+    color: #FD5F00;
+    border: 1px solid #FD5F00;
+    font-weight: bold;
+}
+
+header #login-btn:hover, #logout-btn:hover, .loginAkun-btn button:hover {
+    background-color: #FD5F00;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+header #login-btn:active, #logout-btn:active, .loginAkun-btn button:active {
+    background-color: #e95400;
+    border-color: #e95400;
+    color: white;
+}
+
+.kanan-nav img {
+    width: 20px;
+    margin-right: 45px;
+}
+
+.kanan-nav .notif {
+    margin-right: 50px;
+}
+
+.pencarian {
+    display: none;
+}
+
+.pencarian-btn {
+    display: none;
+}
+
+.article {
+    padding: 20px;
+}
+
+.article .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article .subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.article .date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.article .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article .main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.article .content h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.article .content .image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.article .content .gallery-image {
+    width: 48%;
+    height: auto;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px; /* Jarak antara views dan likes */
+}
+
+.views-likes {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Jarak antara views dan likes */
+}
+
+.likes a {
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+
+.views,
+.likes {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara ikon dan teks */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.layout1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.layout2 img,
+.layout3 img {
+    width: 48%;
+    height: auto;
+    margin: 1%;
+    float: left;
+}
+
+.layout p {
+    clear: both;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+

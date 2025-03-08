@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Password</title>
+    <link rel="stylesheet" href="confirmPassBaru.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="kontainer">
+        <div class="kembali-btn">
+            <a href="beranda.php"><button><b>Kembali</b></button></a>
+        </div>
+    </div>
+    <div class="kontainer">
+        <div class="bungkus-page-login">
+            <div class="logo">
+                <img src="gambar/LOGOO.png" width="100px" alt="">
+            </div>
+            <div class="teks">
+                <p>Login 360 News untuk menggunakan layanan kami</p>
+            </div>
+            <div class="email-password">
+                <div class="password-field">
+                    <input type="password" id="password" placeholder="Masukkan Password Baru Anda">
+                    <img id="togglePassword" src="gambar/hide.png" width="30px" alt="Toggle Password">
+                </div>
+                <div class="password-field">
+                    <input type="password" id="password-2" placeholder="Masukkan Ulang Password Baru Anda">
+                    <img id="togglePassword-2" class="gambarHide2" src="gambar/hide.png" width="30px" alt="Toggle Password">
+                </div>
+            </div>
+            <div class="login-btn">
+                <button>Log in</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="hide-pass-verif.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f1f1f1;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.sidebar ul li a.active {
+  background-color: #ccc;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.logout {
+  margin-top: auto;
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logout:hover {
+  background-color: #fdd;
+  border-radius: 4px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.main-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.article-table th,
+.article-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.article-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.article-table td {
+  font-size: 0.9em;
+}
+
+.article-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.article-table .delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.article-table .delete-btn:hover {
+  background-color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px;
+  }
+
+  .main-content {
+      padding: 20px;
+  }
+
+  .article-table th,
+  .article-table td {
+      font-size: 0.8em;
+      padding: 8px;
+  }
+}

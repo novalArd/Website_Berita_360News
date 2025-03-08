@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding: 0 25px;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(51, 49, 49);
+    margin: 0 25px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+header .kategori:hover {
+    color: #FD5F00;
+}
+
+header .kategori:active {
+    color: black;
+}
+
+.header .left-section a {
+    text-align: center;
+}
+
+.kanan-nav {
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: #FD5F00;
+    border: 1px solid #FD5F00;
+    padding: 0px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+header #login-btn, header #daftar-btn, header #logout-btn, .loginAkun-btn button {
+    background-color: white;
+    color: #FD5F00;
+    border: 1px solid #FD5F00;
+    font-weight: bold;
+}
+
+header #login-btn:hover, #daftar-btn:hover, #logout-btn:hover, .loginAkun-btn button:hover {
+    background-color: #FD5F00;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+header #login-btn:active, #daftar-btn, #logout-btn:active, .loginAkun-btn button:active {
+    background-color: #e95400;
+    border-color: #e95400;
+    color: white;
+}
+
+.kanan-nav img {
+    width: 35px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.article {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.article .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article .subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.article .date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.article .content h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+
+.meta-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px; /* Jarak antara views dan likes */
+}
+
+.views, .like-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Jarak antara views dan likes */
+}
+
+.like-section {
+    gap: 0;
+}
+
+.like-section a img {
+    margin-top: 2px;
+}
+
+.like-section a {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.like-section span {
+    margin-top: 1.5px;
+}
+
+
+.views,
+.likes {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara ikon dan teks */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.content .layout .subjudul-isi {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.content .gambar-fiks {
+    width: 500px;
+    height: 350px;
+}
+
+.content .layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .layout .gambar-footer {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.content .layout .gambar-isi-akhir {
+    display: flex;
+    align-content: flex-start;
+    column-gap: 30px;
+}
+
+.gambar-isi-akhir #gambar-footer1, .gambar-isi-akhir #gambar-footer2 {
+    width: 380px;
+    height: 300px;
+}
+
+.layout .gambar-sampul {
+    width: 100%;
+}
+
+
+/* Style Footer */
+
+.konten-footer {
+    border-top: 1px solid gray;
+    border-width: 100%;
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .konten-footer .bagian-kiri img {
+    width: 100px;
+    margin-left: 100px;
+  }
+  
+  .konten-footer .bagian-kiri p {
+    font-size: 12px;
+    color: gray;
+    margin-left: 100px;
+    letter-spacing: 1px;
+  }
+  
+  .bagian-kiri p {
+    margin-right: 150px;
+  }
+  
+  .footer-tengah {
+    margin-top: 60px;
+  }
+  
+  .footer-tengah p {
+    margin-bottom: 20px;
+    color: #474747;
+    font-size: 12px;
+  }
+  
+  .f-tengah {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+  }
+  
+  .f-tengah a {
+    margin-right: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+  }
+  
+  .f-tengah a:hover {
+    text-decoration: underline;
+    color: #113f67;
+  }
+  
+  .konten-footer .bagian-kanan {
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+  
+  .bagian-kanan p {
+    margin-bottom: 20px;
+    color: #474747;
+    font-size: 12px;
+  }
+  
+  .bagian-kanan .social-media {
+    display: grid;
+  }
+  
+  .bagian-kanan .social-media a {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #474747;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+    color: #005792;
+  }
+  
+  .gambar-sosmed {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-media a img {
+    width: 24px;
+    height: 24px;
+  }
